@@ -1,0 +1,15 @@
+streamlit==1.31.1
+pandas==2.2.2
+numpy==1.26.4
+
+networkx==3.2.1
+graphviz==0.20.1
+python-graphviz==0.20.1
+
+streamlit-option-menu==0.3.6
+streamlit-antd-components==0.4.3
+
+altair==5.2.0
+plotly==5.18.0
+matplotlib==3.8.3
+openpyxl==3.1.2
