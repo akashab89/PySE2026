@@ -1,6 +1,5 @@
 streamlit
 pandas
 networkx
-graphviz
 streamlit-option-menu
 streamlit-antd-components
