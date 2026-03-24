@@ -4,3 +4,4 @@ networkx
 numpy
 streamlit-option-menu
 streamlit-antd-components
+fsf
