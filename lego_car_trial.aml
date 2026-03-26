@@ -1,0 +1,411 @@
+<CAEXFile xmlns="http://www.dke.de/CAEX" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="3.0" FileName="lego_car.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
+  <SuperiorStandardVersion>AutomationML 2.1</SuperiorStandardVersion>
+  <SourceDocumentInformation OriginName="AutomationML Editor" OriginID="916578CA-FE0D-474E-A4FC-9E1719892369" OriginVersion="6.4.2.17" LastWritingDateTime="2026-03-26T15:03:25.6450454+01:00" OriginProjectID="unspecified" OriginProjectTitle="unspecified" OriginRelease="6.4.2.17" OriginVendor="AutomationML e.V." OriginVendorURL="www.AutomationML.org" />
+  <InstanceHierarchy Name="InstanceHierarchy" ID="2d470fb9-6adc-4dbd-9f53-6aee0be68282">
+    <Version>1.0.0</Version>
+    <InternalElement Name="Plastic" ID="1b14ff46-5dae-4df2-ad9f-c941a448ccf0" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string" />
+      <Attribute Name="size" AttributeDataType="xs:string" />
+      <Attribute Name="product_cost" AttributeDataType="xs:double" Unit="Euro" />
+      <Attribute Name="durability" AttributeDataType="xs:int" Unit="years" />
+      <Attribute Name="co2_per_unit" AttributeDataType="xs:double" Unit="kg/unit" />
+      <ExternalInterface Name="PPR_port" ID="2dd6d2c3-7761-4cb5-8e12-8381da1d4392" />
+      <ExternalInterface Name="part_of" ID="b7967701-b435-466c-85e1-4f92155c108b" />
+      <ExternalInterface Name="contributes_to" ID="c2421b1e-b8f6-4b79-8442-f2a90973eb67" />
+      <ExternalInterface Name="influences" ID="6563a7ec-087b-46e1-a0b6-98ee51d5aec8" />
+      <InternalLink RefPartnerSideA="2dd6d2c3-7761-4cb5-8e12-8381da1d4392" RefPartnerSideB="b46e9e95-830d-413c-9e38-1142b4bbcd56" Name="PPR View_Plastic_to_Injection Moulding" />
+    </InternalElement>
+    <InternalElement Name="Load" ID="3eda8b2b-9d94-494b-8e50-7b610d26a309" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string" />
+      <Attribute Name="size" AttributeDataType="xs:string" />
+      <Attribute Name="product_cost" AttributeDataType="xs:double" Unit="Euro" />
+      <Attribute Name="durability" AttributeDataType="xs:int" Unit="years" />
+      <Attribute Name="co2_per_unit" AttributeDataType="xs:double" Unit="kg/unit" />
+      <ExternalInterface Name="PPR_port" ID="a1f0781d-4668-4dcd-be01-732818c2d128" />
+      <ExternalInterface Name="part_of" ID="457e4277-4438-46e1-b199-cbc233666d12" />
+      <ExternalInterface Name="contributes_to" ID="e8ac6785-2d05-4589-a793-75e08a79e81c" />
+      <ExternalInterface Name="influences" ID="d833134e-5794-4c82-9095-e112d0de60df" />
+      <InternalLink RefPartnerSideA="a1f0781d-4668-4dcd-be01-732818c2d128" RefPartnerSideB="28e0f373-2dba-4dec-ad34-bbbdcae9ce73" Name="PPR View_Load_to_Phase III Interlocking" />
+      <InternalLink RefPartnerSideA="457e4277-4438-46e1-b199-cbc233666d12" RefPartnerSideB="63f466b3-8c47-4858-a74e-a363223239fe" Name="Engineering View_Load_to_Delivery Van" />
+    </InternalElement>
+    <InternalElement Name="Chasis" ID="bbd4c4da-95e3-4a0a-b070-9bed6de3620b" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string" />
+      <Attribute Name="size" AttributeDataType="xs:string" />
+      <Attribute Name="product_cost" AttributeDataType="xs:double" Unit="Euro" />
+      <Attribute Name="durability" AttributeDataType="xs:int" Unit="years" />
+      <Attribute Name="co2_per_unit" AttributeDataType="xs:double" Unit="kg/unit" />
+      <ExternalInterface Name="PPR_port" ID="3faedd1a-f87d-4414-9ca1-a4322934c0d0" />
+      <ExternalInterface Name="part_of" ID="7a2c6f15-161d-4661-9e26-ed475da1cb0f" />
+      <ExternalInterface Name="contributes_to" ID="760d14b5-8269-47e5-8eca-c8def9451597" />
+      <ExternalInterface Name="influences" ID="71aff32f-3f22-4784-bb2b-6cd1e3519554" />
+      <InternalLink RefPartnerSideA="3faedd1a-f87d-4414-9ca1-a4322934c0d0" RefPartnerSideB="19e61b7f-7f20-47a2-8562-c6cfb6ac24c0" Name="PPR View_Chasis_to_Phase I Interlocking" />
+      <InternalLink RefPartnerSideA="7a2c6f15-161d-4661-9e26-ed475da1cb0f" RefPartnerSideB="63766890-5923-4cf1-b276-3f43d91be7e7" Name="Engineering View_Chasis_to_Upper Car Body" />
+    </InternalElement>
+    <InternalElement Name="Windshield" ID="84448d40-f4ea-4e9a-8174-996079a63f53" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string" />
+      <Attribute Name="size" AttributeDataType="xs:string" />
+      <Attribute Name="product_cost" AttributeDataType="xs:double" Unit="Euro" />
+      <Attribute Name="durability" AttributeDataType="xs:int" Unit="years" />
+      <Attribute Name="co2_per_unit" AttributeDataType="xs:double" Unit="kg/unit" />
+      <ExternalInterface Name="PPR_port" ID="eec194ec-7a6f-4418-96e8-1b2f233168e7" />
+      <ExternalInterface Name="part_of" ID="09d97e19-2211-41de-b884-763fa1b78a9b" />
+      <ExternalInterface Name="contributes_to" ID="4acee8cf-25cd-442a-a4d2-1aab35b71d1b" />
+      <ExternalInterface Name="influences" ID="200008a5-6954-4026-9000-5618854e6b11" />
+      <InternalLink RefPartnerSideA="eec194ec-7a6f-4418-96e8-1b2f233168e7" RefPartnerSideB="19e61b7f-7f20-47a2-8562-c6cfb6ac24c0" Name="PPR View_Windshield_to_Phase I Interlocking" />
+      <InternalLink RefPartnerSideA="09d97e19-2211-41de-b884-763fa1b78a9b" RefPartnerSideB="63766890-5923-4cf1-b276-3f43d91be7e7" Name="Engineering View_Windshield_to_Upper Car Body" />
+    </InternalElement>
+    <InternalElement Name="Tyre" ID="433e2573-abb1-431d-a64b-af5701f68157" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string" />
+      <Attribute Name="size" AttributeDataType="xs:string" />
+      <Attribute Name="product_cost" AttributeDataType="xs:double" Unit="Euro" />
+      <Attribute Name="durability" AttributeDataType="xs:int" Unit="years" />
+      <Attribute Name="co2_per_unit" AttributeDataType="xs:double" Unit="kg/unit" />
+      <ExternalInterface Name="PPR_port" ID="e6853075-0dee-401a-b9bb-1e9a6828a888" />
+      <ExternalInterface Name="part_of" ID="989d4770-378b-4dad-999c-2657d94cea5c" />
+      <ExternalInterface Name="contributes_to" ID="40cf42da-2ed7-48c8-b70f-37b6d86a9fd0" />
+      <ExternalInterface Name="influences" ID="f380db40-33f4-4d68-b70b-43ddcd18c2c9" />
+      <InternalLink RefPartnerSideA="e6853075-0dee-401a-b9bb-1e9a6828a888" RefPartnerSideB="4946a901-e5fc-4419-a597-814261d7bc9d" Name="PPR View_Tyre_to_Mating" />
+      <InternalLink RefPartnerSideA="989d4770-378b-4dad-999c-2657d94cea5c" RefPartnerSideB="7e97ac12-11fd-4c63-8fbf-69fbb071e3c9" Name="Engineering View_Tyre_to_Wheel" />
+    </InternalElement>
+    <InternalElement Name="Rim" ID="b0ebe788-2185-4e79-8cdd-87c71f96bea0" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string" />
+      <Attribute Name="size" AttributeDataType="xs:string" />
+      <Attribute Name="product_cost" AttributeDataType="xs:double" Unit="Euro" />
+      <Attribute Name="durability" AttributeDataType="xs:int" Unit="years" />
+      <Attribute Name="co2_per_unit" AttributeDataType="xs:double" Unit="kg/unit" />
+      <ExternalInterface Name="PPR_port" ID="cd9c5808-e3de-416f-9b8f-9409412fdd6a" />
+      <ExternalInterface Name="part_of" ID="3d85c77c-6fff-4b71-81a9-d3adcb1d7b48" />
+      <ExternalInterface Name="contributes_to" ID="b4ab00d3-c90c-487a-b00f-3deac92adafb" />
+      <ExternalInterface Name="influences" ID="c2fa5039-f95d-4912-90c6-06f47e48aac7" />
+      <InternalLink RefPartnerSideA="cd9c5808-e3de-416f-9b8f-9409412fdd6a" RefPartnerSideB="4946a901-e5fc-4419-a597-814261d7bc9d" Name="PPR View_Rim_to_Mating" />
+      <InternalLink RefPartnerSideA="3d85c77c-6fff-4b71-81a9-d3adcb1d7b48" RefPartnerSideB="7e97ac12-11fd-4c63-8fbf-69fbb071e3c9" Name="Engineering View_Rim_to_Wheel" />
+    </InternalElement>
+    <InternalElement Name="Axle" ID="7592e5e8-f29f-4861-a717-14bd3567ac05" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string" />
+      <Attribute Name="size" AttributeDataType="xs:string" />
+      <Attribute Name="product_cost" AttributeDataType="xs:double" Unit="Euro" />
+      <Attribute Name="durability" AttributeDataType="xs:int" Unit="years" />
+      <Attribute Name="co2_per_unit" AttributeDataType="xs:double" Unit="kg/unit" />
+      <ExternalInterface Name="PPR_port" ID="2a21707e-bea9-4884-a322-20eb86728ae7" />
+      <ExternalInterface Name="part_of" ID="8e98f960-3b28-4ed0-af94-e0708c1af9f6" />
+      <ExternalInterface Name="contributes_to" ID="f2346d0e-9a2c-4bf9-8139-1103aacc4f4f" />
+      <ExternalInterface Name="influences" ID="9b30d0be-ab3a-411b-bec1-86690f1c8b55" />
+      <InternalLink RefPartnerSideA="2a21707e-bea9-4884-a322-20eb86728ae7" RefPartnerSideB="5e2b7930-9ff4-4484-bec5-70cdc1c57330" Name="PPR View_Axle_to_Wheel Mounting" />
+      <InternalLink RefPartnerSideA="8e98f960-3b28-4ed0-af94-e0708c1af9f6" RefPartnerSideB="d430fac3-f597-4f97-861c-376ff911d957" Name="Engineering View_Axle_to_Drive Unit" />
+    </InternalElement>
+    <InternalElement Name="Upper Car Body" ID="16962327-e360-40ad-96f1-c91ae4939dde" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string" />
+      <Attribute Name="size" AttributeDataType="xs:string" />
+      <Attribute Name="product_cost" AttributeDataType="xs:double" Unit="Euro" />
+      <Attribute Name="durability" AttributeDataType="xs:int" Unit="years" />
+      <Attribute Name="co2_per_unit" AttributeDataType="xs:double" Unit="kg/unit" />
+      <ExternalInterface Name="PPR_port" ID="98099205-a9e8-4b7a-b553-622474f390dc" />
+      <ExternalInterface Name="part_of" ID="63766890-5923-4cf1-b276-3f43d91be7e7" />
+      <ExternalInterface Name="contributes_to" ID="c77088b5-4bf8-4346-a38c-1c7a61f649ee" />
+      <ExternalInterface Name="influences" ID="13e73bb4-ff67-4b18-a3b1-9f0047156a64" />
+      <InternalLink RefPartnerSideA="98099205-a9e8-4b7a-b553-622474f390dc" RefPartnerSideB="e6dc3b77-e40a-4515-bd92-434c0078adb6" Name="PPR View_Upper Car Body_to_Phase II Interlocking" />
+      <InternalLink RefPartnerSideA="63766890-5923-4cf1-b276-3f43d91be7e7" RefPartnerSideB="2c4b8e85-b1aa-4445-8974-c3080b9606fd" Name="Engineering View_Upper Car Body_to_Delivery Van without Load" />
+    </InternalElement>
+    <InternalElement Name="Wheel" ID="67f32317-dc30-407f-93ba-9202ee0ff2ce" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string" />
+      <Attribute Name="size" AttributeDataType="xs:string" />
+      <Attribute Name="product_cost" AttributeDataType="xs:double" Unit="Euro" />
+      <Attribute Name="durability" AttributeDataType="xs:int" Unit="years" />
+      <Attribute Name="co2_per_unit" AttributeDataType="xs:double" Unit="kg/unit" />
+      <ExternalInterface Name="PPR_port" ID="a0980ad8-bbe7-428b-b1d0-c99f8d1c29a2" />
+      <ExternalInterface Name="part_of" ID="7e97ac12-11fd-4c63-8fbf-69fbb071e3c9" />
+      <ExternalInterface Name="contributes_to" ID="ac3e2709-a0cd-4cf9-abf6-55c215057f82" />
+      <ExternalInterface Name="influences" ID="b18caaf2-1abd-412b-ae56-8ab391774cce" />
+      <InternalLink RefPartnerSideA="a0980ad8-bbe7-428b-b1d0-c99f8d1c29a2" RefPartnerSideB="5e2b7930-9ff4-4484-bec5-70cdc1c57330" Name="PPR View_Wheel_to_Wheel Mounting" />
+      <InternalLink RefPartnerSideA="7e97ac12-11fd-4c63-8fbf-69fbb071e3c9" RefPartnerSideB="d430fac3-f597-4f97-861c-376ff911d957" Name="Engineering View_Wheel_to_Drive Unit" />
+    </InternalElement>
+    <InternalElement Name="Drive Unit" ID="b5a9bd6a-065d-4480-9534-456a10071443" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string" />
+      <Attribute Name="size" AttributeDataType="xs:string" />
+      <Attribute Name="product_cost" AttributeDataType="xs:double" Unit="Euro" />
+      <Attribute Name="durability" AttributeDataType="xs:int" Unit="years" />
+      <Attribute Name="co2_per_unit" AttributeDataType="xs:double" Unit="kg/unit" />
+      <ExternalInterface Name="PPR_port" ID="a0c0f2b2-8fa6-478a-883c-dbc2386138d4" />
+      <ExternalInterface Name="part_of" ID="d430fac3-f597-4f97-861c-376ff911d957" />
+      <ExternalInterface Name="contributes_to" ID="72008b56-deed-4390-b693-ff10212b145c" />
+      <ExternalInterface Name="influences" ID="aa556b9a-522b-41b5-bd85-20bf952a828f" />
+      <InternalLink RefPartnerSideA="a0c0f2b2-8fa6-478a-883c-dbc2386138d4" RefPartnerSideB="e6dc3b77-e40a-4515-bd92-434c0078adb6" Name="PPR View_Drive Unit_to_Phase II Interlocking" />
+      <InternalLink RefPartnerSideA="d430fac3-f597-4f97-861c-376ff911d957" RefPartnerSideB="2c4b8e85-b1aa-4445-8974-c3080b9606fd" Name="Engineering View_Drive Unit_to_Delivery Van without Load" />
+    </InternalElement>
+    <InternalElement Name="Delivery Van without Load" ID="24bbc9be-4f31-4cb3-87c5-cabfbaa755e1" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string" />
+      <Attribute Name="size" AttributeDataType="xs:string" />
+      <Attribute Name="product_cost" AttributeDataType="xs:double" Unit="Euro" />
+      <Attribute Name="durability" AttributeDataType="xs:int" Unit="years" />
+      <Attribute Name="co2_per_unit" AttributeDataType="xs:double" Unit="kg/unit" />
+      <ExternalInterface Name="PPR_port" ID="bd7e18ec-1f2c-48b6-b7f1-7ae46931b05f" />
+      <ExternalInterface Name="part_of" ID="2c4b8e85-b1aa-4445-8974-c3080b9606fd" />
+      <ExternalInterface Name="contributes_to" ID="d314358a-fb8a-47b6-a039-107da9d8b515" />
+      <ExternalInterface Name="influences" ID="508d3c17-ab07-43d7-b153-ba3ccf3af5a9" />
+      <InternalLink RefPartnerSideA="bd7e18ec-1f2c-48b6-b7f1-7ae46931b05f" RefPartnerSideB="28e0f373-2dba-4dec-ad34-bbbdcae9ce73" Name="PPR View_Delivery Van without Load_to_Phase III Interlocking" />
+      <InternalLink RefPartnerSideA="2c4b8e85-b1aa-4445-8974-c3080b9606fd" RefPartnerSideB="63f466b3-8c47-4858-a74e-a363223239fe" Name="Engineering View_Delivery Van without Load_to_Delivery Van" />
+    </InternalElement>
+    <InternalElement Name="Delivery Van" ID="9b8897e7-039b-4df8-8688-275e3f74f7ae" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string" />
+      <Attribute Name="size" AttributeDataType="xs:string" />
+      <Attribute Name="product_cost" AttributeDataType="xs:double" Unit="Euro" />
+      <Attribute Name="durability" AttributeDataType="xs:int" Unit="years" />
+      <Attribute Name="co2_per_unit" AttributeDataType="xs:double" Unit="kg/unit" />
+      <ExternalInterface Name="PPR_port" ID="60258296-0c8e-4971-9186-c0e54c56fd3b" />
+      <ExternalInterface Name="part_of" ID="63f466b3-8c47-4858-a74e-a363223239fe" />
+      <ExternalInterface Name="contributes_to" ID="4610e671-59fa-4bc7-91fb-ab5a8277504a" />
+      <ExternalInterface Name="influences" ID="2c49a999-fb54-4f2e-8c39-23b27bf148af" />
+    </InternalElement>
+    <InternalElement Name="Injection Moulding" ID="1d125c0a-bd66-4737-91a3-a0d46355b640" RefBaseSystemUnitPath="SystemUnitClassLib/Process">
+      <Attribute Name="cycle_time" AttributeDataType="xs:double" Unit="seconds" />
+      <Attribute Name="specific_energy_consumption" AttributeDataType="xs:double" Unit="KW/unit" />
+      <Attribute Name="co2_emission" AttributeDataType="xs:double" Unit="kg/hr" />
+      <ExternalInterface Name="PPR_port" ID="b46e9e95-830d-413c-9e38-1142b4bbcd56" />
+      <ExternalInterface Name="constraints" ID="333e933d-efca-4e15-af6b-a1344bc37179" />
+      <ExternalInterface Name="impacts" ID="733f7d84-a60e-4d1d-9560-936591575aa3" />
+      <ExternalInterface Name="influences" ID="0e5b92b2-8c40-404a-a087-1694b9a03d95" />
+      <ExternalInterface Name="energy_flows" ID="656e5ce8-4c9a-4a4f-bc59-2a867b8f07c6" />
+      <ExternalInterface Name="material_flows" ID="67680ac8-effe-4ad6-a314-1ee85b768a99" />
+      <InternalLink RefPartnerSideA="b46e9e95-830d-413c-9e38-1142b4bbcd56" RefPartnerSideB="2c8e0218-0c64-42b8-96cb-571d8c0e6d38" Name="PPR View_Injection Moulding_to_Injection Moulding Machine" />
+      <InternalLink RefPartnerSideA="b46e9e95-830d-413c-9e38-1142b4bbcd56" RefPartnerSideB="a1f0781d-4668-4dcd-be01-732818c2d128" Name="PPR View_Injection Moulding_to_Load" />
+      <InternalLink RefPartnerSideA="b46e9e95-830d-413c-9e38-1142b4bbcd56" RefPartnerSideB="3faedd1a-f87d-4414-9ca1-a4322934c0d0" Name="PPR View_Injection Moulding_to_Chasis" />
+      <InternalLink RefPartnerSideA="b46e9e95-830d-413c-9e38-1142b4bbcd56" RefPartnerSideB="eec194ec-7a6f-4418-96e8-1b2f233168e7" Name="PPR View_Injection Moulding_to_Windshield" />
+      <InternalLink RefPartnerSideA="b46e9e95-830d-413c-9e38-1142b4bbcd56" RefPartnerSideB="e6853075-0dee-401a-b9bb-1e9a6828a888" Name="PPR View_Injection Moulding_to_Tyre" />
+      <InternalLink RefPartnerSideA="b46e9e95-830d-413c-9e38-1142b4bbcd56" RefPartnerSideB="cd9c5808-e3de-416f-9b8f-9409412fdd6a" Name="PPR View_Injection Moulding_to_Rim" />
+      <InternalLink RefPartnerSideA="b46e9e95-830d-413c-9e38-1142b4bbcd56" RefPartnerSideB="2a21707e-bea9-4884-a322-20eb86728ae7" Name="PPR View_Injection Moulding_to_Axle" />
+      <InternalLink RefPartnerSideA="0e5b92b2-8c40-404a-a087-1694b9a03d95" RefPartnerSideB="d833134e-5794-4c82-9095-e112d0de60df" Name="Sustainability View_Injection Moulding_to_Load" />
+      <InternalLink RefPartnerSideA="0e5b92b2-8c40-404a-a087-1694b9a03d95" RefPartnerSideB="71aff32f-3f22-4784-bb2b-6cd1e3519554" Name="Sustainability View_Injection Moulding_to_Chasis" />
+      <InternalLink RefPartnerSideA="0e5b92b2-8c40-404a-a087-1694b9a03d95" RefPartnerSideB="f380db40-33f4-4d68-b70b-43ddcd18c2c9" Name="Sustainability View_Injection Moulding_to_Tyre" />
+      <InternalLink RefPartnerSideA="0e5b92b2-8c40-404a-a087-1694b9a03d95" RefPartnerSideB="c2fa5039-f95d-4912-90c6-06f47e48aac7" Name="Sustainability View_Injection Moulding_to_Rim" />
+      <InternalLink RefPartnerSideA="0e5b92b2-8c40-404a-a087-1694b9a03d95" RefPartnerSideB="9b30d0be-ab3a-411b-bec1-86690f1c8b55" Name="Sustainability View_Injection Moulding_to_Axle" />
+    </InternalElement>
+    <InternalElement Name="Mating" ID="a777c4d2-f06f-420b-a231-b0ce9df114f1" RefBaseSystemUnitPath="SystemUnitClassLib/Process">
+      <Attribute Name="cycle_time" AttributeDataType="xs:double" Unit="seconds" />
+      <Attribute Name="specific_energy_consumption" AttributeDataType="xs:double" Unit="KW/unit" />
+      <Attribute Name="co2_emission" AttributeDataType="xs:double" Unit="kg/hr" />
+      <ExternalInterface Name="PPR_port" ID="4946a901-e5fc-4419-a597-814261d7bc9d" />
+      <ExternalInterface Name="constraints" ID="1aea8d25-aa2d-495b-a709-aded909eb79d" />
+      <ExternalInterface Name="impacts" ID="8891278d-00ce-4b01-acc0-4678e661d3d8" />
+      <ExternalInterface Name="influences" ID="18762f0c-f3c1-417d-b0fd-ef8b7513edec" />
+      <ExternalInterface Name="energy_flows" ID="b220be97-56db-4916-8c29-f75a25063b32" />
+      <ExternalInterface Name="material_flows" ID="3e481eac-0bc5-4ad8-82c4-9b301a77f698" />
+      <InternalLink RefPartnerSideA="4946a901-e5fc-4419-a597-814261d7bc9d" RefPartnerSideB="6f4abf03-a85d-4c98-9f40-6d86f60c9ea3" Name="PPR View_Mating_to_Mating Robot" />
+      <InternalLink RefPartnerSideA="4946a901-e5fc-4419-a597-814261d7bc9d" RefPartnerSideB="a0980ad8-bbe7-428b-b1d0-c99f8d1c29a2" Name="PPR View_Mating_to_Wheel" />
+      <InternalLink RefPartnerSideA="1aea8d25-aa2d-495b-a709-aded909eb79d" RefPartnerSideB="5cff6bd3-ed03-48b8-96a2-3ecc7402b6f4" Name="Engineering View_Mating_to_Wheel Mounting" />
+      <InternalLink RefPartnerSideA="18762f0c-f3c1-417d-b0fd-ef8b7513edec" RefPartnerSideB="b18caaf2-1abd-412b-ae56-8ab391774cce" Name="Sustainability View_Mating_to_Wheel" />
+    </InternalElement>
+    <InternalElement Name="Wheel Mounting" ID="9a467ebd-9d7d-41aa-89e6-3493e6a256f4" RefBaseSystemUnitPath="SystemUnitClassLib/Process">
+      <Attribute Name="cycle_time" AttributeDataType="xs:double" Unit="seconds" />
+      <Attribute Name="specific_energy_consumption" AttributeDataType="xs:double" Unit="KW/unit" />
+      <Attribute Name="co2_emission" AttributeDataType="xs:double" Unit="kg/hr" />
+      <ExternalInterface Name="PPR_port" ID="5e2b7930-9ff4-4484-bec5-70cdc1c57330" />
+      <ExternalInterface Name="constraints" ID="5cff6bd3-ed03-48b8-96a2-3ecc7402b6f4" />
+      <ExternalInterface Name="impacts" ID="d6644bce-c4f8-490a-a55b-99e6897c25e1" />
+      <ExternalInterface Name="influences" ID="50a2f4f4-4aae-48d0-a778-d2956ff07f72" />
+      <ExternalInterface Name="energy_flows" ID="b5c3073b-e13a-48f1-ae34-7ac30d8ca547" />
+      <ExternalInterface Name="material_flows" ID="33499635-c111-42d1-a327-a536a679c1a7" />
+      <InternalLink RefPartnerSideA="5e2b7930-9ff4-4484-bec5-70cdc1c57330" RefPartnerSideB="6f4abf03-a85d-4c98-9f40-6d86f60c9ea3" Name="PPR View_Wheel Mounting_to_Mating Robot" />
+      <InternalLink RefPartnerSideA="5e2b7930-9ff4-4484-bec5-70cdc1c57330" RefPartnerSideB="a0c0f2b2-8fa6-478a-883c-dbc2386138d4" Name="PPR View_Wheel Mounting_to_Drive Unit" />
+      <InternalLink RefPartnerSideA="50a2f4f4-4aae-48d0-a778-d2956ff07f72" RefPartnerSideB="aa556b9a-522b-41b5-bd85-20bf952a828f" Name="Sustainability View_Wheel Mounting_to_Drive Unit" />
+    </InternalElement>
+    <InternalElement Name="Phase I Interlocking" ID="8e3e91f4-e8b8-42a5-a147-5a2562d8418d" RefBaseSystemUnitPath="SystemUnitClassLib/Process">
+      <Attribute Name="cycle_time" AttributeDataType="xs:double" Unit="seconds" />
+      <Attribute Name="specific_energy_consumption" AttributeDataType="xs:double" Unit="KW/unit" />
+      <Attribute Name="co2_emission" AttributeDataType="xs:double" Unit="kg/hr" />
+      <ExternalInterface Name="PPR_port" ID="19e61b7f-7f20-47a2-8562-c6cfb6ac24c0" />
+      <ExternalInterface Name="constraints" ID="bc5821f1-de7d-453c-8238-97a987bade23" />
+      <ExternalInterface Name="impacts" ID="9816eeb9-b883-494a-8ec2-8493db4e4f8b" />
+      <ExternalInterface Name="influences" ID="6ad22300-e999-4bad-a813-79c1939b9ba9" />
+      <ExternalInterface Name="energy_flows" ID="9ec047c2-1b4e-4b9a-bce1-57a388a18d81" />
+      <ExternalInterface Name="material_flows" ID="0ed74306-f967-4708-9cbd-ed7386e164b9" />
+      <InternalLink RefPartnerSideA="19e61b7f-7f20-47a2-8562-c6cfb6ac24c0" RefPartnerSideB="4b6a9a22-76aa-4388-a7a9-34aabb5f2875" Name="PPR View_Phase I Interlocking_to_Manual Operator" />
+      <InternalLink RefPartnerSideA="19e61b7f-7f20-47a2-8562-c6cfb6ac24c0" RefPartnerSideB="98099205-a9e8-4b7a-b553-622474f390dc" Name="PPR View_Phase I Interlocking_to_Upper Car Body" />
+      <InternalLink RefPartnerSideA="bc5821f1-de7d-453c-8238-97a987bade23" RefPartnerSideB="5ca16018-7576-45f6-80eb-3ec2b80a5cbd" Name="Engineering View_Phase I Interlocking_to_Phase II Interlocking" />
+      <InternalLink RefPartnerSideA="6ad22300-e999-4bad-a813-79c1939b9ba9" RefPartnerSideB="13e73bb4-ff67-4b18-a3b1-9f0047156a64" Name="Sustainability View_Phase I Interlocking_to_Upper Car Body" />
+    </InternalElement>
+    <InternalElement Name="Phase II Interlocking" ID="23231c06-d51a-4667-8dac-01cf6d6ef85b" RefBaseSystemUnitPath="SystemUnitClassLib/Process">
+      <Attribute Name="cycle_time" AttributeDataType="xs:double" Unit="seconds" />
+      <Attribute Name="specific_energy_consumption" AttributeDataType="xs:double" Unit="KW/unit" />
+      <Attribute Name="co2_emission" AttributeDataType="xs:double" Unit="kg/hr" />
+      <ExternalInterface Name="PPR_port" ID="e6dc3b77-e40a-4515-bd92-434c0078adb6" />
+      <ExternalInterface Name="constraints" ID="5ca16018-7576-45f6-80eb-3ec2b80a5cbd" />
+      <ExternalInterface Name="impacts" ID="32797c6f-9e51-49ea-ad29-2b52cddf71d9" />
+      <ExternalInterface Name="influences" ID="f513043f-61c1-4418-8ab4-b69c4675f82a" />
+      <ExternalInterface Name="energy_flows" ID="918f65eb-7600-423e-92f1-87468c964226" />
+      <ExternalInterface Name="material_flows" ID="f1daccea-991b-49e5-af3a-3432d7df249b" />
+      <InternalLink RefPartnerSideA="e6dc3b77-e40a-4515-bd92-434c0078adb6" RefPartnerSideB="4b6a9a22-76aa-4388-a7a9-34aabb5f2875" Name="PPR View_Phase II Interlocking_to_Manual Operator" />
+      <InternalLink RefPartnerSideA="e6dc3b77-e40a-4515-bd92-434c0078adb6" RefPartnerSideB="bd7e18ec-1f2c-48b6-b7f1-7ae46931b05f" Name="PPR View_Phase II Interlocking_to_Delivery Van without Load" />
+      <InternalLink RefPartnerSideA="5ca16018-7576-45f6-80eb-3ec2b80a5cbd" RefPartnerSideB="63f85fc4-4197-49c3-b617-7ea59af90430" Name="Engineering View_Phase II Interlocking_to_Phase III Interlocking" />
+      <InternalLink RefPartnerSideA="f513043f-61c1-4418-8ab4-b69c4675f82a" RefPartnerSideB="508d3c17-ab07-43d7-b153-ba3ccf3af5a9" Name="Sustainability View_Phase II Interlocking_to_Delivery Van without Load" />
+    </InternalElement>
+    <InternalElement Name="Phase III Interlocking" ID="2e7e0f7b-ddbc-4acc-a49a-0855d78e542b" RefBaseSystemUnitPath="SystemUnitClassLib/Process">
+      <Attribute Name="cycle_time" AttributeDataType="xs:double" Unit="seconds" />
+      <Attribute Name="specific_energy_consumption" AttributeDataType="xs:double" Unit="KW/unit" />
+      <Attribute Name="co2_emission" AttributeDataType="xs:double" Unit="kg/hr" />
+      <ExternalInterface Name="PPR_port" ID="28e0f373-2dba-4dec-ad34-bbbdcae9ce73" />
+      <ExternalInterface Name="constraints" ID="63f85fc4-4197-49c3-b617-7ea59af90430" />
+      <ExternalInterface Name="impacts" ID="05b5306c-f40b-46e6-ba16-e9abd896df72" />
+      <ExternalInterface Name="influences" ID="c63ea048-872b-45e5-adc6-8e05656d6dd0" />
+      <ExternalInterface Name="energy_flows" ID="b696634c-d066-42be-8b20-db8758da6bd9" />
+      <ExternalInterface Name="material_flows" ID="752cc014-0ffa-4582-b578-a6cd07908cde" />
+      <InternalLink RefPartnerSideA="28e0f373-2dba-4dec-ad34-bbbdcae9ce73" RefPartnerSideB="4b6a9a22-76aa-4388-a7a9-34aabb5f2875" Name="PPR View_Phase III Interlocking_to_Manual Operator" />
+      <InternalLink RefPartnerSideA="28e0f373-2dba-4dec-ad34-bbbdcae9ce73" RefPartnerSideB="60258296-0c8e-4971-9186-c0e54c56fd3b" Name="PPR View_Phase III Interlocking_to_Delivery Van" />
+      <InternalLink RefPartnerSideA="c63ea048-872b-45e5-adc6-8e05656d6dd0" RefPartnerSideB="2c49a999-fb54-4f2e-8c39-23b27bf148af" Name="Sustainability View_Phase III Interlocking_to_Delivery Van" />
+    </InternalElement>
+    <InternalElement Name="Injection Moulding Machine" ID="c1d0c281-585a-4e60-a0bb-515103b415eb" RefBaseSystemUnitPath="SystemUnitClassLib/Resource">
+      <Attribute Name="operating_cost" AttributeDataType="xs:double" Unit="Euro" />
+      <Attribute Name="operating_speed" AttributeDataType="xs:double" Unit="units/min" />
+      <Attribute Name="energy_flow_rate" AttributeDataType="xs:double" Unit="KW/hr" />
+      <ExternalInterface Name="PPR_port" ID="2c8e0218-0c64-42b8-96cb-571d8c0e6d38" />
+      <ExternalInterface Name="contributes_to" ID="3e6867bb-08e1-490f-a978-44188bb8fa1a" />
+      <ExternalInterface Name="impacts" ID="0d9420c9-55ee-4e0f-a757-ca93bc5bd716" />
+      <ExternalInterface Name="energy_flows" ID="63db83c0-f5df-474f-9863-4a2afd1fe459" />
+      <ExternalInterface Name="material_flows" ID="5c6e8ed9-7a68-4cbe-879c-7814a669062d" />
+      <InternalElement Name="Moulding Tool" ID="fcb785dc-9339-417c-a2b2-bf3226579610" RefBaseSystemUnitPath="SystemUnitClassLib/Resource">
+        <Attribute Name="operating_cost" AttributeDataType="xs:double" Unit="Euro" />
+        <Attribute Name="operating_speed" AttributeDataType="xs:double" Unit="units/min" />
+        <Attribute Name="energy_flow_rate" AttributeDataType="xs:double" Unit="KW/hr" />
+        <ExternalInterface Name="PPR_port" ID="ff1f0c9e-ba58-4153-97a0-03a0c499197c" />
+        <ExternalInterface Name="contributes_to" ID="27fbfb9f-1780-4c0c-9d25-131fec7d16c8" />
+        <ExternalInterface Name="impacts" ID="21aa1cc5-6f9e-47ec-a533-b25a4890d9b3" />
+        <ExternalInterface Name="energy_flows" ID="e63ca03a-0c2d-4a1f-a45a-409c350148d3" />
+        <ExternalInterface Name="material_flows" ID="a7bb1a46-69e1-49d2-b618-17f9be46465e" />
+        <InternalLink RefPartnerSideA="e63ca03a-0c2d-4a1f-a45a-409c350148d3" RefPartnerSideB="656e5ce8-4c9a-4a4f-bc59-2a867b8f07c6" Name="Sustainability View_Moulding Tool_to_Injection Moulding" />
+      </InternalElement>
+      <InternalElement Name="Colorant Feed" ID="a4e0c766-df05-4a98-a267-e14f13ea148a" RefBaseSystemUnitPath="SystemUnitClassLib/Resource">
+        <Attribute Name="operating_cost" AttributeDataType="xs:double" Unit="Euro" />
+        <Attribute Name="operating_speed" AttributeDataType="xs:double" Unit="units/min" />
+        <Attribute Name="energy_flow_rate" AttributeDataType="xs:double" Unit="KW/hr" />
+        <ExternalInterface Name="PPR_port" ID="cf0615d0-f9ca-49ee-802d-a95c97c04f45" />
+        <ExternalInterface Name="contributes_to" ID="e9c19970-3ce8-41e8-8c63-d401e9e5a2bc" />
+        <ExternalInterface Name="impacts" ID="3f45b9ac-5bcc-4426-a256-f8770d81b04f" />
+        <ExternalInterface Name="energy_flows" ID="6f3b49a4-42cc-415d-b100-a74c97d9d1e5" />
+        <ExternalInterface Name="material_flows" ID="85dedf14-f96d-4f80-bce4-e0014ff86d2c" />
+        <InternalLink RefPartnerSideA="85dedf14-f96d-4f80-bce4-e0014ff86d2c" RefPartnerSideB="67680ac8-effe-4ad6-a314-1ee85b768a99" Name="Sustainability View_Colorant Feed_to_Injection Moulding" />
+      </InternalElement>
+      <InternalLink RefPartnerSideA="2c8e0218-0c64-42b8-96cb-571d8c0e6d38" RefPartnerSideB="ff1f0c9e-ba58-4153-97a0-03a0c499197c" Name="PPR View_Injection Moulding Machine_to_Moulding Tool" />
+      <InternalLink RefPartnerSideA="2c8e0218-0c64-42b8-96cb-571d8c0e6d38" RefPartnerSideB="cf0615d0-f9ca-49ee-802d-a95c97c04f45" Name="PPR View_Injection Moulding Machine_to_Colorant Feed" />
+      <InternalLink RefPartnerSideA="3e6867bb-08e1-490f-a978-44188bb8fa1a" RefPartnerSideB="e8ac6785-2d05-4589-a793-75e08a79e81c" Name="Engineering View_Injection Moulding Machine_to_Load" />
+      <InternalLink RefPartnerSideA="3e6867bb-08e1-490f-a978-44188bb8fa1a" RefPartnerSideB="760d14b5-8269-47e5-8eca-c8def9451597" Name="Engineering View_Injection Moulding Machine_to_Chasis" />
+      <InternalLink RefPartnerSideA="3e6867bb-08e1-490f-a978-44188bb8fa1a" RefPartnerSideB="4acee8cf-25cd-442a-a4d2-1aab35b71d1b" Name="Engineering View_Injection Moulding Machine_to_Windshield" />
+      <InternalLink RefPartnerSideA="3e6867bb-08e1-490f-a978-44188bb8fa1a" RefPartnerSideB="40cf42da-2ed7-48c8-b70f-37b6d86a9fd0" Name="Engineering View_Injection Moulding Machine_to_Tyre" />
+      <InternalLink RefPartnerSideA="3e6867bb-08e1-490f-a978-44188bb8fa1a" RefPartnerSideB="b4ab00d3-c90c-487a-b00f-3deac92adafb" Name="Engineering View_Injection Moulding Machine_to_Rim" />
+      <InternalLink RefPartnerSideA="3e6867bb-08e1-490f-a978-44188bb8fa1a" RefPartnerSideB="f2346d0e-9a2c-4bf9-8139-1103aacc4f4f" Name="Engineering View_Injection Moulding Machine_to_Axle" />
+    </InternalElement>
+    <InternalElement Name="Manual Operator" ID="690cb562-1174-45ed-aa1c-773abd568b0f" RefBaseSystemUnitPath="SystemUnitClassLib/Resource">
+      <Attribute Name="operating_cost" AttributeDataType="xs:double" Unit="Euro" />
+      <Attribute Name="operating_speed" AttributeDataType="xs:double" Unit="units/min" />
+      <Attribute Name="energy_flow_rate" AttributeDataType="xs:double" Unit="KW/hr" />
+      <ExternalInterface Name="PPR_port" ID="4b6a9a22-76aa-4388-a7a9-34aabb5f2875" />
+      <ExternalInterface Name="contributes_to" ID="43ee90ed-7ec7-4552-b1c4-8ba57a85620d" />
+      <ExternalInterface Name="impacts" ID="bdda6594-28f5-444f-9600-3acfb4425658" />
+      <ExternalInterface Name="energy_flows" ID="6ba7934d-93d3-4035-8398-8ddbef72f084" />
+      <ExternalInterface Name="material_flows" ID="63eba5d4-c01e-4368-92f8-799db5b745d0" />
+      <InternalLink RefPartnerSideA="43ee90ed-7ec7-4552-b1c4-8ba57a85620d" RefPartnerSideB="c77088b5-4bf8-4346-a38c-1c7a61f649ee" Name="Engineering View_Manual Operator_to_Upper Car Body" />
+      <InternalLink RefPartnerSideA="43ee90ed-7ec7-4552-b1c4-8ba57a85620d" RefPartnerSideB="d314358a-fb8a-47b6-a039-107da9d8b515" Name="Engineering View_Manual Operator_to_Delivery Van without Load" />
+      <InternalLink RefPartnerSideA="43ee90ed-7ec7-4552-b1c4-8ba57a85620d" RefPartnerSideB="4610e671-59fa-4bc7-91fb-ab5a8277504a" Name="Engineering View_Manual Operator_to_Delivery Van" />
+      <InternalLink RefPartnerSideA="bdda6594-28f5-444f-9600-3acfb4425658" RefPartnerSideB="9816eeb9-b883-494a-8ec2-8493db4e4f8b" Name="Engineering View_Manual Operator_to_Phase I Interlocking" />
+      <InternalLink RefPartnerSideA="bdda6594-28f5-444f-9600-3acfb4425658" RefPartnerSideB="32797c6f-9e51-49ea-ad29-2b52cddf71d9" Name="Engineering View_Manual Operator_to_Phase II Interlocking" />
+      <InternalLink RefPartnerSideA="bdda6594-28f5-444f-9600-3acfb4425658" RefPartnerSideB="05b5306c-f40b-46e6-ba16-e9abd896df72" Name="Engineering View_Manual Operator_to_Phase III Interlocking" />
+      <InternalLink RefPartnerSideA="6ba7934d-93d3-4035-8398-8ddbef72f084" RefPartnerSideB="9ec047c2-1b4e-4b9a-bce1-57a388a18d81" Name="Sustainability View_Manual Operator_to_Phase I Interlocking" />
+      <InternalLink RefPartnerSideA="6ba7934d-93d3-4035-8398-8ddbef72f084" RefPartnerSideB="918f65eb-7600-423e-92f1-87468c964226" Name="Sustainability View_Manual Operator_to_Phase II Interlocking" />
+      <InternalLink RefPartnerSideA="6ba7934d-93d3-4035-8398-8ddbef72f084" RefPartnerSideB="b696634c-d066-42be-8b20-db8758da6bd9" Name="Sustainability View_Manual Operator_to_Phase III Interlocking" />
+    </InternalElement>
+    <InternalElement Name="Mating Robot" ID="19690df8-f851-4098-a8ca-3fe3c45146e9" RefBaseSystemUnitPath="SystemUnitClassLib/Resource">
+      <Attribute Name="operating_cost" AttributeDataType="xs:double" Unit="Euro" />
+      <Attribute Name="operating_speed" AttributeDataType="xs:double" Unit="units/min" />
+      <Attribute Name="energy_flow_rate" AttributeDataType="xs:double" Unit="KW/hr" />
+      <ExternalInterface Name="PPR_port" ID="6f4abf03-a85d-4c98-9f40-6d86f60c9ea3" />
+      <ExternalInterface Name="contributes_to" ID="9fe70488-4b9e-4861-9e0e-fc32c29eafd0" />
+      <ExternalInterface Name="impacts" ID="e793a426-6c76-4f90-952d-968c4689e0ca" />
+      <ExternalInterface Name="energy_flows" ID="d70c92ab-9542-4865-b6dd-b5711ead39b5" />
+      <ExternalInterface Name="material_flows" ID="3f84d1ce-ecc1-41b4-b3c7-20d3afbe1e7f" />
+      <InternalLink RefPartnerSideA="9fe70488-4b9e-4861-9e0e-fc32c29eafd0" RefPartnerSideB="ac3e2709-a0cd-4cf9-abf6-55c215057f82" Name="Engineering View_Mating Robot_to_Wheel" />
+      <InternalLink RefPartnerSideA="e793a426-6c76-4f90-952d-968c4689e0ca" RefPartnerSideB="8891278d-00ce-4b01-acc0-4678e661d3d8" Name="Engineering View_Mating Robot_to_Mating" />
+      <InternalLink RefPartnerSideA="e793a426-6c76-4f90-952d-968c4689e0ca" RefPartnerSideB="d6644bce-c4f8-490a-a55b-99e6897c25e1" Name="Engineering View_Mating Robot_to_Wheel Mounting" />
+      <InternalLink RefPartnerSideA="d70c92ab-9542-4865-b6dd-b5711ead39b5" RefPartnerSideB="b220be97-56db-4916-8c29-f75a25063b32" Name="Sustainability View_Mating Robot_to_Mating" />
+      <InternalLink RefPartnerSideA="d70c92ab-9542-4865-b6dd-b5711ead39b5" RefPartnerSideB="b5c3073b-e13a-48f1-ae34-7ac30d8ca547" Name="Sustainability View_Mating Robot_to_Wheel Mounting" />
+    </InternalElement>
+  </InstanceHierarchy>
+  <InterfaceClassLib Name="InterfaceClassLib" ID="cafbe591-6805-4a51-8289-0d87de137379">
+    <Version>1.0.0</Version>
+    <InterfaceClass Name="PPR_interface" ID="7f8058ee-1453-4741-8289-30760a3ed660">
+      <Version>1.0.0</Version>
+      <ExternalInterface Name="PPR_port" ID="62499da3-070b-4c79-b9f9-ef5df097ed0b" />
+    </InterfaceClass>
+    <InterfaceClass Name="engineering_interfaces" ID="327fe070-bf61-4485-92b5-e7cb5e77aec7">
+      <Version>1.0.0</Version>
+      <ExternalInterface Name="part_of" ID="8db4b236-be55-46f3-9978-f6d3d9573935" />
+      <ExternalInterface Name="contributes_to" ID="d414dec2-9b4d-4140-9bf4-d63412115f4f" />
+      <ExternalInterface Name="impacts" ID="4f8491c2-5261-44a9-9e70-3a45769c6324" />
+      <ExternalInterface Name="constraints" ID="f5955cc3-7e00-4d7e-94a2-2f84f6d467d3" />
+    </InterfaceClass>
+    <InterfaceClass Name="sustainability_interfaces" ID="5a35920d-f195-414c-b9d4-6147a93d9709">
+      <Version>1.0.0</Version>
+      <ExternalInterface Name="energy_flows" ID="8ed5ee7c-d40b-48ba-ac1f-da0c45386224" />
+      <ExternalInterface Name="material_flows" ID="89f0cd0c-ce92-4b05-b4cc-32ed2d58bb6b" />
+      <ExternalInterface Name="influences" ID="f6cd6519-7c79-485a-9092-88b803e1a2e0" />
+    </InterfaceClass>
+  </InterfaceClassLib>
+  <SystemUnitClassLib Name="SystemUnitClassLib" ID="c50934ce-13fc-4bfa-8350-cb4213e0c91d">
+    <Version>1.0.0</Version>
+    <SystemUnitClass Name="Product" ID="f8d45608-9dab-4acc-a6c1-f27ee1e1c798">
+      <Version>1.0.0</Version>
+      <Attribute Name="color" AttributeDataType="xs:string" />
+      <Attribute Name="size" AttributeDataType="xs:string" />
+      <Attribute Name="product_cost" AttributeDataType="xs:double" Unit="Euro" />
+      <Attribute Name="durability" AttributeDataType="xs:int" Unit="years" />
+      <Attribute Name="co2_per_unit" AttributeDataType="xs:double" Unit="kg/unit" />
+      <ExternalInterface Name="PPR_port" ID="5f7ea710-3502-4bbb-bb82-18b1f6e7adf6" />
+      <ExternalInterface Name="part_of" ID="0862b52d-fb32-44c2-a0c7-a1ffde289d00" />
+      <ExternalInterface Name="contributes_to" ID="81155df3-3f51-4b9f-8694-59483101f3d8" />
+      <ExternalInterface Name="influences" ID="c2f9ca16-3b52-446d-8bee-22831a541f66" />
+    </SystemUnitClass>
+    <SystemUnitClass Name="Process" ID="8f39f9be-ac78-4838-ad58-fde1d8c816df">
+      <Version>1.0.0</Version>
+      <Attribute Name="cycle_time" AttributeDataType="xs:double" Unit="seconds" />
+      <Attribute Name="specific_energy_consumption" AttributeDataType="xs:double" Unit="KW/unit" />
+      <Attribute Name="co2_emission" AttributeDataType="xs:double" Unit="kg/hr" />
+      <ExternalInterface Name="PPR_port" ID="279f8eb1-537a-4913-a34b-06b4ddd9fff0" />
+      <ExternalInterface Name="constraints" ID="f5acd5e1-348e-49b0-8b9e-b84b63a791ce" />
+      <ExternalInterface Name="impacts" ID="7f417eee-e1de-4c72-90c3-8507802e5421" />
+      <ExternalInterface Name="influences" ID="f6e5a0ba-7118-4cbf-a366-37984e500a9f" />
+      <ExternalInterface Name="energy_flows" ID="7a821f02-be76-401f-933d-5df8fe253b47" />
+      <ExternalInterface Name="material_flows" ID="64267729-6780-498a-b7b9-d1d014e0481c" />
+    </SystemUnitClass>
+    <SystemUnitClass Name="Resource" ID="959c427d-75de-42a2-9be7-45849f76e745">
+      <Version>1.0.0</Version>
+      <Attribute Name="operating_cost" AttributeDataType="xs:double" Unit="Euro" />
+      <Attribute Name="operating_speed" AttributeDataType="xs:double" Unit="units/min" />
+      <Attribute Name="energy_flow_rate" AttributeDataType="xs:double" Unit="KW/hr" />
+      <ExternalInterface Name="PPR_port" ID="73d5401a-928f-4b3d-a355-c5d9f49ea779" />
+      <ExternalInterface Name="contributes_to" ID="e6687d80-cb20-45f2-af81-70f413843bc7" />
+      <ExternalInterface Name="impacts" ID="67211720-5e09-47fc-b825-9d5c295b700f" />
+      <ExternalInterface Name="energy_flows" ID="8af9c11a-0fd2-4cb3-8a12-3b6b253057ca" />
+      <ExternalInterface Name="material_flows" ID="fd681cf7-e742-43e2-8503-854a722ce011" />
+    </SystemUnitClass>
+  </SystemUnitClassLib>
+  <AttributeTypeLib Name="AttributeTypeLib" ID="9c65035b-00ed-4edd-8640-5e21664bf575">
+    <Version>1.0.0</Version>
+    <AttributeType Name="ppr_attributes" ID="767e3e0d-96b0-4cd3-861e-a434cc2923bb" AttributeDataType="xs:string">
+      <Version>1.0.0</Version>
+      <Attribute Name="color" AttributeDataType="xs:string" />
+      <Attribute Name="size" AttributeDataType="xs:string" />
+    </AttributeType>
+    <AttributeType Name="engineering_attributes" ID="9e418c1d-bbde-4920-a168-edf3dbc5a035" AttributeDataType="xs:double">
+      <Version>1.0.0</Version>
+      <Attribute Name="operating_cost" AttributeDataType="xs:double" Unit="Euro" />
+      <Attribute Name="operating_speed" AttributeDataType="xs:double" Unit="units/min" />
+      <Attribute Name="product_cost" AttributeDataType="xs:double" Unit="Euro" />
+      <Attribute Name="cycle_time" AttributeDataType="xs:double" Unit="seconds" />
+    </AttributeType>
+    <AttributeType Name="sustainability_attributes" ID="c88e0fe6-8cf8-4900-b25e-94bf9224a243" AttributeDataType="xs:double">
+      <Version>1.0.0</Version>
+      <Attribute Name="energy_flow_rate" AttributeDataType="xs:double" Unit="KW/hr" />
+      <Attribute Name="specific_energy_consumption" AttributeDataType="xs:double" Unit="KW/unit" />
+      <Attribute Name="co2_emission" AttributeDataType="xs:double" Unit="kg/hr" />
+      <Attribute Name="co2_per_unit" AttributeDataType="xs:double" Unit="kg/unit" />
+      <Attribute Name="durability" AttributeDataType="xs:int" Unit="years" />
+    </AttributeType>
+  </AttributeTypeLib>
+</CAEXFile>
