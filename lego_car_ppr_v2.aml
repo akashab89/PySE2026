@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CAEXFile xmlns="http://www.dke.de/CAEX" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="3.0" FileName="lego_car_ppr_v2.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
+  <SuperiorStandardVersion>AutomationML 2.1</SuperiorStandardVersion>
+  <SourceDocumentInformation OriginName="AutomationML Editor" OriginID="916578CA-FE0D-474E-A4FC-9E1719892369" OriginVersion="6.4.3.4" LastWritingDateTime="2026-04-05T12:33:47.6142283+02:00" OriginProjectID="unspecified" OriginProjectTitle="unspecified" OriginRelease="6.4.3.4" OriginVendor="AutomationML e.V." OriginVendorURL="www.AutomationML.org" />
+  <InstanceHierarchy Name="InstanceHierarchy" ID="2d470fb9-6adc-4dbd-9f53-6aee0be68282">
+    <Version>1.0.0</Version>
+    <InternalElement Name="Plastic" ID="6e141c9b-21ee-4f7d-a67a-b65cd5bfd775" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string">
+        <Value>White</Value>
+      </Attribute>
+      <Attribute Name="size" AttributeDataType="xs:string">
+        <Value>M</Value>
+      </Attribute>
+      <Attribute Name="Quantity" AttributeDataType="xs:string">
+        <Value>1</Value>
+      </Attribute>
+      <ExternalInterface Name="PPR_port" ID="4b1e8e8f-074b-4072-b1db-4b3d11b7e543" />
+      <InternalLink RefPartnerSideA="4b1e8e8f-074b-4072-b1db-4b3d11b7e543" RefPartnerSideB="55627962-3c26-4993-9bad-215eb1a14d9d" Name="PPR View_Plastic_to_Injection Moulding" />
+    </InternalElement>
+    <InternalElement Name="Load" ID="2ffee0a9-811a-4922-9db8-8a2caaca5abe" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string">
+        <Value>Black</Value>
+      </Attribute>
+      <Attribute Name="size" AttributeDataType="xs:string">
+        <Value>Medium</Value>
+      </Attribute>
+      <Attribute Name="Quantity" AttributeDataType="xs:string">
+        <DefaultValue>1</DefaultValue>
+      </Attribute>
+      <ExternalInterface Name="PPR_port" ID="f77066ba-7d1d-4a41-a27a-907ab6a914e1" />
+      <InternalLink RefPartnerSideA="f77066ba-7d1d-4a41-a27a-907ab6a914e1" RefPartnerSideB="0d9af5e6-b716-4493-8472-67b3fe1ac3cd" Name="PPR View_Load_to_Phase III Interlocking"></InternalLink>
+    </InternalElement>
+    <InternalElement Name="Chasis" ID="885c5ea7-2316-4a56-a4bc-014ba388f453" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string">
+        <Value>Blue</Value>
+      </Attribute>
+      <Attribute Name="size" AttributeDataType="xs:string">
+        <Value>Medium</Value>
+      </Attribute>
+      <Attribute Name="Quantity" AttributeDataType="xs:string">
+        <DefaultValue>1</DefaultValue>
+      </Attribute>
+      <ExternalInterface Name="PPR_port" ID="dce740d9-4126-4ce4-ba5f-c58ace748ea6" />
+      <InternalLink RefPartnerSideA="dce740d9-4126-4ce4-ba5f-c58ace748ea6" RefPartnerSideB="943ccd65-015f-4ea1-9308-6517b4134d87" Name="PPR View_Chasis_to_Phase I Interlocking" />
+    </InternalElement>
+    <InternalElement Name="Windshield" ID="3d281bff-64fa-4ab3-9c4d-a642594aff7d" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string">
+        <Value>White</Value>
+      </Attribute>
+      <Attribute Name="size" AttributeDataType="xs:string">
+        <Value>Small</Value>
+      </Attribute>
+      <Attribute Name="Quantity" AttributeDataType="xs:string">
+        <DefaultValue>1</DefaultValue>
+      </Attribute>
+      <ExternalInterface Name="PPR_port" ID="25146d25-597b-4de2-bdd9-8e35a2ac2191" />
+      <InternalLink RefPartnerSideA="25146d25-597b-4de2-bdd9-8e35a2ac2191" RefPartnerSideB="943ccd65-015f-4ea1-9308-6517b4134d87" Name="PPR View_Windshield_to_Phase I Interlocking" />
+    </InternalElement>
+    <InternalElement Name="Tyre" ID="3efd1b12-526c-4215-8672-bcc036dae65c" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string">
+        <Value>Black</Value>
+      </Attribute>
+      <Attribute Name="size" AttributeDataType="xs:string">
+        <Value>Small</Value>
+      </Attribute>
+      <Attribute Name="Quantity" AttributeDataType="xs:string">
+        <DefaultValue>1</DefaultValue>
+      </Attribute>
+      <ExternalInterface Name="PPR_port" ID="c1cbf991-5cfd-4c0f-9e07-7c0c6e56a2a9" />
+      <InternalLink RefPartnerSideA="c1cbf991-5cfd-4c0f-9e07-7c0c6e56a2a9" RefPartnerSideB="b7b72fdf-3937-4d46-85ec-3fd429beaae3" Name="PPR View_Tyre_to_Mating" />
+    </InternalElement>
+    <InternalElement Name="Rim" ID="32e93b38-b990-47ec-9e29-e1ab7aec3e68" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string">
+        <Value>Yellow</Value>
+      </Attribute>
+      <Attribute Name="size" AttributeDataType="xs:string">
+        <Value>Small</Value>
+      </Attribute>
+      <Attribute Name="Quantity" AttributeDataType="xs:string">
+        <DefaultValue>1</DefaultValue>
+      </Attribute>
+      <ExternalInterface Name="PPR_port" ID="72725519-2d7a-466f-9e39-18764f2c0cc9" />
+      <InternalLink RefPartnerSideA="72725519-2d7a-466f-9e39-18764f2c0cc9" RefPartnerSideB="b7b72fdf-3937-4d46-85ec-3fd429beaae3" Name="PPR View_Rim_to_Mating" />
+    </InternalElement>
+    <InternalElement Name="Axle" ID="920a242f-7492-4a4b-be14-3f32aa145d50" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string">
+        <Value>Green</Value>
+      </Attribute>
+      <Attribute Name="size" AttributeDataType="xs:string">
+        <Value>Small</Value>
+      </Attribute>
+      <Attribute Name="Quantity" AttributeDataType="xs:string">
+        <DefaultValue>1</DefaultValue>
+      </Attribute>
+      <ExternalInterface Name="PPR_port" ID="d55e2fca-a6ae-45c9-93fa-80a6c6a67c64" />
+      <InternalLink RefPartnerSideA="d55e2fca-a6ae-45c9-93fa-80a6c6a67c64" RefPartnerSideB="b7f3eae7-b150-4e4b-9e7c-6af3caa68f1a" Name="PPR View_Axle_to_Wheel Mounting" />
+    </InternalElement>
+    <InternalElement Name="Upper Car Body" ID="eaae0c92-6905-4c36-af1b-5e270da42fa9" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string" />
+      <Attribute Name="size" AttributeDataType="xs:string" />
+      <Attribute Name="Quantity" AttributeDataType="xs:string">
+        <DefaultValue>1</DefaultValue>
+      </Attribute>
+      <ExternalInterface Name="PPR_port" ID="24d82185-8f64-48e3-a1ed-605c8988b88c" />
+      <InternalLink RefPartnerSideA="24d82185-8f64-48e3-a1ed-605c8988b88c" RefPartnerSideB="ae012e8a-8190-4811-8432-4f1f1650c38d" Name="PPR View_Upper Car Body_to_Phase II Interlocking" />
+    </InternalElement>
+    <InternalElement Name="Wheel" ID="cd8f9ee7-7d98-4a1d-80ee-8fc5b81c4af5" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string" />
+      <Attribute Name="size" AttributeDataType="xs:string" />
+      <Attribute Name="Quantity" AttributeDataType="xs:string">
+        <DefaultValue>1</DefaultValue>
+        <Value>2</Value>
+      </Attribute>
+      <ExternalInterface Name="PPR_port" ID="3b3992e9-812b-416c-83bd-69a07a05871d" />
+      <InternalLink RefPartnerSideA="3b3992e9-812b-416c-83bd-69a07a05871d" RefPartnerSideB="b7f3eae7-b150-4e4b-9e7c-6af3caa68f1a" Name="PPR View_Wheel_to_Wheel Mounting">
+      </InternalLink>
+    </InternalElement>
+    <InternalElement Name="Drive Unit" ID="f7100729-f717-49fd-8411-fed015b55281" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string" />
+      <Attribute Name="size" AttributeDataType="xs:string" />
+      <Attribute Name="Quantity" AttributeDataType="xs:string">
+        <DefaultValue>1</DefaultValue>
+        <Value>2</Value>
+      </Attribute>
+      <ExternalInterface Name="PPR_port" ID="b1dc78ce-2139-40c4-aaa9-03149ee74971" />
+      <InternalLink RefPartnerSideA="b1dc78ce-2139-40c4-aaa9-03149ee74971" RefPartnerSideB="ae012e8a-8190-4811-8432-4f1f1650c38d" Name="PPR View_Drive Unit_to_Phase II Interlocking">
+      </InternalLink>
+    </InternalElement>
+    <InternalElement Name="Delivery Van without Load" ID="2564a93f-0de9-4bb0-810a-7e2c2439f88f" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string" />
+      <Attribute Name="size" AttributeDataType="xs:string" />
+      <Attribute Name="Quantity" AttributeDataType="xs:string">
+        <DefaultValue>1</DefaultValue>
+      </Attribute>
+      <ExternalInterface Name="PPR_port" ID="735c37d4-94b9-43f5-9523-e4c2c5ac7f2f" />
+      <InternalLink RefPartnerSideA="735c37d4-94b9-43f5-9523-e4c2c5ac7f2f" RefPartnerSideB="0d9af5e6-b716-4493-8472-67b3fe1ac3cd" Name="PPR View_Delivery Van without Load_to_Phase III Interlocking" />
+    </InternalElement>
+    <InternalElement Name="Delivery Van" ID="eedace48-136c-420c-9f1f-d51a77f65d25" RefBaseSystemUnitPath="SystemUnitClassLib/Product">
+      <Attribute Name="color" AttributeDataType="xs:string" />
+      <Attribute Name="size" AttributeDataType="xs:string" />
+      <Attribute Name="Quantity" AttributeDataType="xs:string">
+        <DefaultValue>1</DefaultValue>
+      </Attribute>
+      <ExternalInterface Name="PPR_port" ID="155edc84-6845-4a1e-8ca0-2a787e5f79c5" />
+    </InternalElement>
+    <InternalElement Name="Injection Moulding" ID="8652df3b-d139-4cfd-ac3a-b89f4e0a90c7" RefBaseSystemUnitPath="SystemUnitClassLib/Process">
+      <ExternalInterface Name="PPR_port" ID="55627962-3c26-4993-9bad-215eb1a14d9d" />
+      <InternalLink RefPartnerSideA="55627962-3c26-4993-9bad-215eb1a14d9d" RefPartnerSideB="0fba43cb-e541-4fb6-b607-0107ea136282" Name="PPR View_Injection Moulding_to_Injection Moulding Machine" />
+      <InternalLink RefPartnerSideA="55627962-3c26-4993-9bad-215eb1a14d9d" RefPartnerSideB="f77066ba-7d1d-4a41-a27a-907ab6a914e1" Name="PPR View_Injection Moulding_to_Load" />
+      <InternalLink RefPartnerSideA="55627962-3c26-4993-9bad-215eb1a14d9d" RefPartnerSideB="dce740d9-4126-4ce4-ba5f-c58ace748ea6" Name="PPR View_Injection Moulding_to_Chasis" />
+      <InternalLink RefPartnerSideA="55627962-3c26-4993-9bad-215eb1a14d9d" RefPartnerSideB="25146d25-597b-4de2-bdd9-8e35a2ac2191" Name="PPR View_Injection Moulding_to_Windshield" />
+      <InternalLink RefPartnerSideA="55627962-3c26-4993-9bad-215eb1a14d9d" RefPartnerSideB="c1cbf991-5cfd-4c0f-9e07-7c0c6e56a2a9" Name="PPR View_Injection Moulding_to_Tyre" />
+      <InternalLink RefPartnerSideA="55627962-3c26-4993-9bad-215eb1a14d9d" RefPartnerSideB="72725519-2d7a-466f-9e39-18764f2c0cc9" Name="PPR View_Injection Moulding_to_Rim" />
+      <InternalLink RefPartnerSideA="55627962-3c26-4993-9bad-215eb1a14d9d" RefPartnerSideB="d55e2fca-a6ae-45c9-93fa-80a6c6a67c64" Name="PPR View_Injection Moulding_to_Axle" />
+    </InternalElement>
+    <InternalElement Name="Mating" ID="8eb92553-d42e-455a-aae3-c8cd1288e054" RefBaseSystemUnitPath="SystemUnitClassLib/Process">
+      <ExternalInterface Name="PPR_port" ID="b7b72fdf-3937-4d46-85ec-3fd429beaae3" />
+      <InternalLink RefPartnerSideA="b7b72fdf-3937-4d46-85ec-3fd429beaae3" RefPartnerSideB="3b3992e9-812b-416c-83bd-69a07a05871d" Name="PPR View_Mating_to_Wheel" />
+      <InternalLink RefPartnerSideA="b7b72fdf-3937-4d46-85ec-3fd429beaae3" RefPartnerSideB="82b07f74-8239-4042-9989-2cab36ea720c" Name="PPR View_Mating_to_Mating Robot" />
+    </InternalElement>
+    <InternalElement Name="Wheel Mounting" ID="dc655132-d519-4a3c-8688-5e4b1489d4d4" RefBaseSystemUnitPath="SystemUnitClassLib/Process">
+      <ExternalInterface Name="PPR_port" ID="b7f3eae7-b150-4e4b-9e7c-6af3caa68f1a" />
+      <InternalLink RefPartnerSideA="b7f3eae7-b150-4e4b-9e7c-6af3caa68f1a" RefPartnerSideB="82b07f74-8239-4042-9989-2cab36ea720c" Name="PPR View_Wheel Mounting_to_Mating Robot" />
+      <InternalLink RefPartnerSideA="b7f3eae7-b150-4e4b-9e7c-6af3caa68f1a" RefPartnerSideB="b1dc78ce-2139-40c4-aaa9-03149ee74971" Name="PPR View_Wheel Mounting_to_Drive Unit" />
+    </InternalElement>
+    <InternalElement Name="Phase I Interlocking" ID="a101ee82-2071-43dc-a858-2d11aec2fffe" RefBaseSystemUnitPath="SystemUnitClassLib/Process">
+      <ExternalInterface Name="PPR_port" ID="943ccd65-015f-4ea1-9308-6517b4134d87" />
+      <InternalLink RefPartnerSideA="943ccd65-015f-4ea1-9308-6517b4134d87" RefPartnerSideB="24d82185-8f64-48e3-a1ed-605c8988b88c" Name="PPR View_Phase I Interlocking_to_Upper Car Body" />
+      <InternalLink RefPartnerSideA="943ccd65-015f-4ea1-9308-6517b4134d87" RefPartnerSideB="9de306f3-aeeb-4b85-bfb0-5f212bca8302" Name="PPR View_Phase I Interlocking_to_Manual Operator" />
+    </InternalElement>
+    <InternalElement Name="Phase II Interlocking" ID="6be8bf51-275c-4142-af8e-4ea8a189443b" RefBaseSystemUnitPath="SystemUnitClassLib/Process">
+      <ExternalInterface Name="PPR_port" ID="ae012e8a-8190-4811-8432-4f1f1650c38d" />
+      <InternalLink RefPartnerSideA="ae012e8a-8190-4811-8432-4f1f1650c38d" RefPartnerSideB="9de306f3-aeeb-4b85-bfb0-5f212bca8302" Name="PPR View_Phase II Interlocking_to_Manual Operator" />
+      <InternalLink RefPartnerSideA="ae012e8a-8190-4811-8432-4f1f1650c38d" RefPartnerSideB="735c37d4-94b9-43f5-9523-e4c2c5ac7f2f" Name="PPR View_Phase II Interlocking_to_Delivery Van without Load" />
+    </InternalElement>
+    <InternalElement Name="Phase III Interlocking" ID="d56fffb0-588c-468b-b2ac-ca3b874a3941" RefBaseSystemUnitPath="SystemUnitClassLib/Process">
+      <ExternalInterface Name="PPR_port" ID="0d9af5e6-b716-4493-8472-67b3fe1ac3cd" />
+      <InternalLink RefPartnerSideA="0d9af5e6-b716-4493-8472-67b3fe1ac3cd" RefPartnerSideB="9de306f3-aeeb-4b85-bfb0-5f212bca8302" Name="PPR View_Phase III Interlocking_to_Manual Operator" />
+      <InternalLink RefPartnerSideA="0d9af5e6-b716-4493-8472-67b3fe1ac3cd" RefPartnerSideB="155edc84-6845-4a1e-8ca0-2a787e5f79c5" Name="PPR View_Phase III Interlocking_to_Delivery Van" />
+    </InternalElement>
+    <InternalElement Name="Injection Moulding Machine" ID="d6d1a6ee-97cc-45bb-a878-5507da87ac7f" RefBaseSystemUnitPath="SystemUnitClassLib/Resource">
+      <ExternalInterface Name="PPR_port" ID="0fba43cb-e541-4fb6-b607-0107ea136282" />
+      <InternalElement Name="Moulding Tool" ID="2d0ae28a-ceb1-4462-95f9-854c8d055b5a" RefBaseSystemUnitPath="SystemUnitClassLib/Resource">
+        <ExternalInterface Name="PPR_port" ID="56d9467e-bb99-4500-bf95-a3bb5aaa4cba" />
+      </InternalElement>
+      <InternalElement Name="Colorant Feed" ID="2a0d6a48-bc46-407a-af9a-8641e0cd763b" RefBaseSystemUnitPath="SystemUnitClassLib/Resource">
+        <ExternalInterface Name="PPR_port" ID="390cf5eb-ca09-40e1-b4b7-24bb5082062f" />
+      </InternalElement>
+      <InternalLink RefPartnerSideA="0fba43cb-e541-4fb6-b607-0107ea136282" RefPartnerSideB="56d9467e-bb99-4500-bf95-a3bb5aaa4cba" Name="PPR View_Injection Moulding Machine_to_Moulding Tool" />
+      <InternalLink RefPartnerSideA="0fba43cb-e541-4fb6-b607-0107ea136282" RefPartnerSideB="390cf5eb-ca09-40e1-b4b7-24bb5082062f" Name="PPR View_Injection Moulding Machine_to_Colorant Feed" />
+    </InternalElement>
+    <InternalElement Name="Manual Operator" ID="04105352-ebc3-4959-b4b6-c498e65b41db" RefBaseSystemUnitPath="SystemUnitClassLib/Resource">
+      <ExternalInterface Name="PPR_port" ID="9de306f3-aeeb-4b85-bfb0-5f212bca8302" />
+    </InternalElement>
+    <InternalElement Name="Mating Robot" ID="645ba529-a709-40a6-b661-9995142df3d1" RefBaseSystemUnitPath="SystemUnitClassLib/Resource">
+      <ExternalInterface Name="PPR_port" ID="82b07f74-8239-4042-9989-2cab36ea720c" />
+    </InternalElement>
+  </InstanceHierarchy>
+  <InterfaceClassLib Name="InterfaceClassLib" ID="cafbe591-6805-4a51-8289-0d87de137379">
+    <Version>1.0.0</Version>
+    <InterfaceClass Name="PPR_interface" ID="7f8058ee-1453-4741-8289-30760a3ed660">
+      <Version>1.0.0</Version>
+      <ExternalInterface Name="PPR_port" ID="62499da3-070b-4c79-b9f9-ef5df097ed0b" />
+    </InterfaceClass>
+  </InterfaceClassLib>
+  <SystemUnitClassLib Name="SystemUnitClassLib" ID="c50934ce-13fc-4bfa-8350-cb4213e0c91d">
+    <Version>1.0.0</Version>
+    <SystemUnitClass Name="Product" ID="f8d45608-9dab-4acc-a6c1-f27ee1e1c798">
+      <Version>1.0.0</Version>
+      <Attribute Name="color" AttributeDataType="xs:string" />
+      <Attribute Name="size" AttributeDataType="xs:string" />
+      <Attribute Name="Quantity" AttributeDataType="xs:string">
+        <DefaultValue>1</DefaultValue>
+      </Attribute>
+      <ExternalInterface Name="PPR_port" ID="5f7ea710-3502-4bbb-bb82-18b1f6e7adf6" />
+    </SystemUnitClass>
+    <SystemUnitClass Name="Process" ID="8f39f9be-ac78-4838-ad58-fde1d8c816df">
+      <Version>1.0.0</Version>
+      <ExternalInterface Name="PPR_port" ID="279f8eb1-537a-4913-a34b-06b4ddd9fff0" />
+    </SystemUnitClass>
+    <SystemUnitClass Name="Resource" ID="959c427d-75de-42a2-9be7-45849f76e745">
+      <Version>1.0.0</Version>
+      <ExternalInterface Name="PPR_port" ID="73d5401a-928f-4b3d-a355-c5d9f49ea779" />
+    </SystemUnitClass>
+  </SystemUnitClassLib>
+  <AttributeTypeLib Name="AttributeTypeLib" ID="9c65035b-00ed-4edd-8640-5e21664bf575">
+    <Version>1.0.0</Version>
+    <AttributeType Name="ppr_attributes" ID="767e3e0d-96b0-4cd3-861e-a434cc2923bb" AttributeDataType="xs:string">
+      <Version>1.0.0</Version>
+      <Attribute Name="color" AttributeDataType="xs:string" />
+      <Attribute Name="size" AttributeDataType="xs:string" />
+    </AttributeType>
+  </AttributeTypeLib>
+</CAEXFile>
