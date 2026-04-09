@@ -5,9 +5,7 @@ def delete_node(element_list):
         st.warning("No nodes available to delete.")
         return element_list
 
-    # ----------------------------------------------------------
     # SELECT NODE TO DELETE
-    # ----------------------------------------------------------
     name_list = [item["Name"] for item in element_list]
     s_node = st.selectbox("Select Node", name_list, key="delete_select_node")
 
@@ -19,9 +17,7 @@ def delete_node(element_list):
     current_parent_id = selected_element.get("ParentID", None)
     current_attributes = selected_element.get("Attributes", [])
 
-    # ----------------------------------------------------------
     # SHOW SELECTED NODE DETAILS
-    # ----------------------------------------------------------
     st.write("### Selected Node Details")
     st.write({
         "Name": current_name,
@@ -30,9 +26,7 @@ def delete_node(element_list):
         "Attributes": current_attributes
     })
 
-    # ----------------------------------------------------------
     # DELETE OPTIONS
-    # ----------------------------------------------------------
     delete_children = st.checkbox(
         "Also delete child nodes of the selected node",
         value=False,
@@ -45,9 +39,7 @@ def delete_node(element_list):
         key="delete_confirm_checkbox"
     )
 
-    # ----------------------------------------------------------
     # DELETE BUTTON
-    # ----------------------------------------------------------
     if st.button("Delete Node", key="delete_node_button"):
         if not confirm_delete:
             st.error("Please confirm deletion before proceeding.")
