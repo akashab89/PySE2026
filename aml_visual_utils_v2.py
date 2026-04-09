@@ -4,7 +4,7 @@ from yfiles_graphs_for_streamlit import NodeStyle, NodeShape
 # CONVERT NETWORKX GRAPH TO YFILES NODE / EDGE FORMAT
 # - adds Quantity in label like "Wheel (2X)"
 # - adds flags for parent / child relation
-def nx_to_yfiles_graph(nx_graph):
+def nx_to_yfiles_graph(nx_graph, show_edge_labels=False):
     nodes = []
     edges = []
 
@@ -68,11 +68,17 @@ def nx_to_yfiles_graph(nx_graph):
 
     # CONVERT NETWORKX EDGES TO YFILES EDGES
     for source, target, attrs in nx_graph.edges(data=True):
-        edges.append({
+        edge_data = {
             "id": f"{source}-{target}",
             "start": str(source),
             "end": str(target)
-        })
+        }
+
+        if show_edge_labels:
+            edge_label = attrs.get("label", "")
+            edge_data["properties"] = {"label": edge_label}
+
+        edges.append(edge_data)
 
     return nodes, edges
 
