@@ -1,0 +1,88 @@
+import streamlit as st
+import xml.etree.ElementTree as et
+from yfiles_graphs_for_streamlit import StreamlitGraphWidget, Layout
+from yfiles_graphs_for_streamlit import NodeStyle, NodeShape
+import xml.etree.ElementTree as ET
+import networkx as nx
+from streamlit_option_menu import option_menu
+from pages1 import import_model, build_ppr, explore_sample, help_docs
+
+
+st.set_page_config(page_title="Product-Process-Resource (PPR) Visualizer", page_icon="⚙️",layout="wide",initial_sidebar_state="collapsed")
+st.title("⚙️ Product-Process-Resource (PPR) Visualizer")
+
+
+sidebar_menu = ["Import Model", "Build PPR Model", "Explore Sample","Help and Docs"]
+
+if "main_menu" not in st.session_state:
+    st.session_state.main_menu = "Import Model"
+if "engineering_nodes" not in st.session_state:
+    st.session_state.engineering_nodes = {}  # Store a copy of the elements dictionary in session state
+if "engineering_edges" not in st.session_state:
+    st.session_state.engineering_edges = []  # Store a copy of the engineering link list in session state
+if "sustainability_nodes" not in st.session_state:
+    st.session_state.sustainability_nodes = {}
+if "sustainability_edges" not in st.session_state:
+    st.session_state.sustainability_edges = []
+if "built_nodes" not in st.session_state:
+    st.session_state.built_nodes = {}  # Store a copy of the built nodes dictionary in session state
+if "built_edges" not in st.session_state:
+    st.session_state.built_edges = []  # Store a copy of the built edges list in session state
+
+engineering_nodes= st.session_state.engineering_nodes
+engineering_edges= st.session_state.engineering_edges 
+sustainability_nodes= st.session_state.sustainability_nodes
+sustainability_edges= st.session_state.sustainability_edges
+
+
+current = st.session_state.get("main_menu")
+current_index = sidebar_menu.index(current)
+
+with st.sidebar:
+    selected_sidebar=option_menu("Workspace",
+                     sidebar_menu,
+                     icons=["upload","diagram-3","box-seam","question-circle"],
+                     menu_icon="grid",
+                     default_index=current_index,
+                     orientation= "vertical",
+                     key="main_menu")
+
+
+
+    if st.button("Reset Workspace", key="reset_button"):
+        @st.dialog("Reset Workspace")
+        def reset_workspace():
+            st.write("Are you sure you want to reset everything?")
+
+            if st.button("OK"):
+
+                a= st.session_state.main_menu
+                if "view_of" in st.session_state:
+                    b= st.session_state.view_of
+                st.session_state.clear()
+                st.session_state.main_menu = a
+                if "view_of" not in st.session_state:
+                    st.session_state.view_of = b
+                st.rerun()
+        reset_workspace()
+    
+
+#st.write(st.session_state)
+
+if "view_of" not in st.session_state:
+    st.session_state.view_of = {}
+
+
+if selected_sidebar == "Import Model":
+    import_model.show(engineering_nodes=engineering_nodes, engineering_edges=engineering_edges,
+                       sustainability_nodes=sustainability_nodes, sustainability_edges=sustainability_edges)
+
+elif selected_sidebar == "Build PPR Model":
+    build_ppr.show(engineering_nodes=engineering_nodes, engineering_edges=engineering_edges,
+                   sustainability_nodes=sustainability_nodes, sustainability_edges=sustainability_edges)
+
+# elif selected_sidebar == "Explore Sample":
+#     explore_sample.show()
+
+elif selected_sidebar == "Help and Docs":
+    help_docs.show()
